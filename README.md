@@ -27,7 +27,7 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 
 ># API ENDPOINTS
 >> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNews | Gets recent news
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param
+>> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param  
 >> Get news by category coming soon.
 
 ># CURRENTLY SUPPORTED SITES  
