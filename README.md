@@ -18,15 +18,17 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 
 ># RSS vs NEWS GRABBER
 >>RSS provides everything except the inner news content from a single site.
->>News Grabber crawls through news links and its inner page contents and saves the full news content in database which are later served from api.
-  
+>>News Grabber crawls through news links and its inner page contents and saves the full news content in database which are later served from api.  
+
 ># API USAGE RULES  
 >>Always give the credit to original site with link to the news (SHOULD REDIRECT). Source link will be mapped to api response by default for every news.  
 >>Do not send frequent request. Try to limit requests below 1800 hourly.  
+>>Api is Production ready! Do not abuse.  
 
 ># API ENDPOINTS
 >> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNews | Gets recent news
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query
+>> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param
+>> Get news by category coming soon.
 
 ># CURRENTLY SUPPORTED SITES  
 >>GSMarena.com ~ status -Production (v1)  
