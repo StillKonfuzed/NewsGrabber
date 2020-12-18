@@ -17,8 +17,8 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 >>The demo version takes 30s to grab the news, but api version will be 30 times faster as it will save grabbed news to database and fetch directly from database.
 
 ># RSS vs NEWS GRABBER
->>RSS provides everything except the inner news content from a single site.
->>News Grabber crawls through news links and its inner page contents and saves the full news content in database which are later served from api.  
+>>RSS provides everything except the inner news content from a single site.  
+>>News Grabber solves this as it crawls through news links and its inner page contents and saves the full news content in database which are later served from api.  
 
 ># API USAGE RULES  
 >>Always give the credit to original site with link to the news (SHOULD REDIRECT). Source link will be mapped to api response by default for every news.  
@@ -26,9 +26,22 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 >>Api is Production ready! Do not abuse.  
 
 ># API ENDPOINTS
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNews | Gets recent news
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param  
+>> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNews | Gets recent news.  
+>> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param.  
 >> Get news by category coming soon.
+
+># Pros  
+>>No subscriptions or payments involved.  
+>>Free to use upto 2 years.  
+>>Super simple to implement.  
+>>No data collected at all not even you IP.   
+>>No copyright issues if you include the news source as provided.  
+>>New sites added every week.  
+
+># Cons  
+>>1 out of 50 image MAY appear broken, for that the api automatically replaces the broken image with placeholder.png  
+>>Very limited sites support. (more sites support will come soon).  
+>>Some irrelevent news may appear as its a bot not AI.  
 
 ># CURRENTLY SUPPORTED SITES  
 >>GSMarena.com ~ status -Production (v1)  
