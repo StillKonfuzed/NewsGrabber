@@ -16,6 +16,10 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 >>No such request capping here. Enjoy Unlimited requests until server crashes!  
 >>The demo version takes 30s to grab the news, but api version will be 30 times faster as it will save grabbed news to database and fetch directly from database.
 
+># RSS vs NEWS GRABBER
+>>RSS provides everything except the inner news content from a single site.
+>>News Grabber crawls through news links and its inner page contents and saves the full news content in database which are later served from api.
+  
 ># API USAGE RULES  
 >>Always give the credit to original site with link to the news (SHOULD REDIRECT). Source link will be mapped to api response by default for every news.  
 >>Do not send frequent request. Try to limit requests below 1800 hourly.  
