@@ -4,7 +4,7 @@ News Grabber Bot with API.
 >Tired of manually copy, pasting and stealing news from various popular sites to your own news app and website?   
 Tired of uploading news and its images from badly coded admin panels ??  
 Tired of paying for different news apis and still not getting the full news content??  
-Worry no more! News grabber automates all the process and all you need to do is rela.. ok too advertisement, lets get to point>>
+Worry no more! News grabber automates all the process and all you need to do is rela.. ok too much advertisement, lets get to point>>
 
 The news grabber bot grabs news from popular sites and provides a cleanly written API.  
 API response is always Json data ,  that includes news Title,Image,Content and Source link to the news.  
