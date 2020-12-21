@@ -2,10 +2,10 @@
 News Grabber Bot
 
 The news grabber bot grabs news from popular sites and provides the news data in json format.  
-Json data includes news title,image,content and a source link to the news.  
-Api is available at : https://stillkonfuzed.in.net/NewsGrabber/
+Json data includes news title,image,content and source link to the news.   
+Api & Docs is available at : https://stillkonfuzed.in.net/NewsGrabber/
 
-# here is a the grabber working live demo  
+# Here is a quick demo of grabber working live. 
 POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGrabberDemo
 
 >The project is server side coded and will remain closed source forever!
@@ -31,6 +31,7 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 >> Get news by category coming soon.
 
 ># Pros  
+>>No manual copy/pasting of news anymore.  
 >>No subscriptions or payments involved.  
 >>Free to use upto 2 years.  
 >>Super simple to implement.  
