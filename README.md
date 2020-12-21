@@ -10,11 +10,11 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 
 >The project is server side coded and will remain closed source forever!
 
-># How is this api different then others news grabbers?  
+># How is this api different than others news grabbers?  
 >>Well firstly, you dont have to register to get an api key.  
 >>Secondly there is no such api key thing here.  
 >>No such request capping here. Enjoy Unlimited requests until server crashes!  
->>The demo version takes 30s to grab the news, but api version will be 30 times faster as it will save grabbed news to database and fetch directly from database.
+>>The demo version takes 30s to grab the news, but api version is 30 times faster as it saves grabbed news to database and fetches directly from database.
 
 ># RSS vs NEWS GRABBER
 >>RSS provides everything except the inner news content from a single site.  
