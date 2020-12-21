@@ -1,9 +1,15 @@
-# NewsGrabber
-News Grabber Bot
+# NewsGrabber Bot
+News Grabber Bot with API. 
 
-The news grabber bot grabs news from popular sites and provides the news data in json format.  
-Json data includes news title,image,content and source link to the news.   
-Api & Docs is available at : https://stillkonfuzed.in.net/NewsGrabber/
+>Tired of manually copy, pasting and stealing news from various popular sites to your own news app and website?   
+Tired of uploading news and its images from badly coded admin panels ??  
+Tired of paying for different news apis and still not getting the full news content??  
+Worry no more! News grabber automates all the process and all you need to do is rela.. ok too advertisement, lets get to point>>
+
+The news grabber bot grabs news from popular sites and provides a cleanly written API.  
+API response is always Json data ,  that includes news Title,Image,Content and Source link to the news.  
+
+Noob friendly Api & Docs is available at : https://stillkonfuzed.in.net/NewsGrabber/
 
 # Here is a quick demo of grabber working live. 
 POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGrabberDemo
@@ -22,6 +28,7 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 
 ># API USAGE RULES  
 >>Always give the credit to original site with link to the news (SHOULD REDIRECT). Source link will be mapped to api response by default for every news.  
+>>Repeating above point. You MUST include the source link in the news which MUST redirect to source on click.   
 >>Do not send frequent request. Try to limit requests below 1800 hourly.  
 >>Api is Production ready! Do not abuse.  
 
@@ -33,17 +40,24 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 ># Pros  
 >>No manual copy/pasting of news anymore.  
 >>No subscriptions or payments involved.  
->>Free to use upto 2 years.  
+>>Free to use upto 2+ years.  
 >>Super simple to implement.  
 >>No data collected at all not even you IP.   
 >>No copyright issues if you include the news source as provided.  
->>New sites added every week.  
+>>Provides more traffic to source webiste where the news was grabbed from.   
+>>New sites support added every 2 week.  
 
 ># Cons  
->>1 out of 50 image MAY appear broken, for that the api automatically replaces the broken image with placeholder.png  
+>>1 out of 100 image MAY appear broken, for that the api automatically replaces the broken image with placeholder.png  
 >>Very limited sites support. (more sites support will come soon).  
->>Some irrelevent news may appear as its a bot not AI.  
+>>Some irrelevent news may appear as its a bot not AI. 
+>>No news on sundays, most sites post weekly news reviews and blogs on that day. 
+>>For precise control over news, you have to contact me. 
 
 ># CURRENTLY SUPPORTED SITES  
 >>GSMarena.com ~ status -Production (v1)  
 >>in.mashable.com ~ status -Beta (v0.6)  
+
+># Apps using this API
+>>KK news
+
