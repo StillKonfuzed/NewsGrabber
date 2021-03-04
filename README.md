@@ -9,10 +9,10 @@ Worry no more! News grabber automates all the process and all you need to do is 
 The news grabber bot grabs news from popular sites and provides a cleanly written API.  
 API response is always Json data ,  that includes news Title,Image,Content and Source link to the news.  
 
-Noob friendly Api & Docs is available at : https://stillkonfuzed.in.net/NewsGrabber/
+Noob friendly Api & Docs is available at : https://stillkonfuzed.com/NewsGrabber/
 
 # Here is a quick demo of grabber working live. 
-POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGrabberDemo
+POST/GET link : https://stillkonfuzed.com/NewsGrabber/grabber/gsmarenaNewsGrabberDemo
 
 >The project is server side coded and will remain closed source forever!
 
@@ -33,8 +33,8 @@ POST/GET link : https://stillkonfuzed.in.net/NewsGrabber/grabber/gsmarenaNewsGra
 >>Api is Production ready! Do not abuse.  
 
 ># API ENDPOINTS
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNews | Gets recent news.  
->> GET/POST https://stillkonfuzed.in.net/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param.  
+>> GET/POST https://stillkonfuzed.com/NewsGrabber/grabber/getNews | Gets recent news.  
+>> GET/POST https://stillkonfuzed.com/NewsGrabber/grabber/getNewsById?id=1 | Pass  news id as query param.  
 >> Get news by category coming soon.
 
 ># Pros  
