@@ -14,7 +14,8 @@ Noob friendly Api & Docs is available at : https://stillkonfuzed.com/NewsGrabber
 # Here is a quick demo of grabber working live. 
 POST/GET link : https://stillkonfuzed.com/NewsGrabber/grabber/gsmarenaNewsGrabberDemo
 
->The project is server side coded and will remain closed source forever!
+>~~The project is server side coded and will remain closed source forever!~~
+>>Not anymore! The repo is open to everyone.
 
 ># How is this api different than others news grabbers?  
 >>Well firstly, you dont have to register to get an api key.  
