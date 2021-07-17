@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Grabber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+
+
+</head>
+
+<body>
+<div class="content">
+    <b class="menu-toggler" onclick="toggleMenu()">MENU</b>
+    <div class="menu-items-container" style="display:none">
+        <p class="links"><a href="../">About Developer</a></p>
+        <p class="links"><a href="https://github.com/StillKonfuzed/NewsGrabber">Github Docs</a></p>
+    </div>
+    <h1 class="main-title" onclick="toggleMenu()">News Grabber Api</h1>
+    <div class='intro-block'>
+        <p class="intro-bock-p">News Grabber Api is based on News Grabber Bot. The bot copies only essential things of news contents which are mainly title,image and inner content with published date.</p>
+    </div>
+    <h1 class="main-title" onclick="toggleMenu()">How does it work</h1>
+    <div class='intro-block'>
+        <p class="intro-bock-p">News Grabber bot crawls to supported sites on hourly basis and grabs news,the news is immediately formatted and inserted to database. Which is later used by the News Grabber Api.</p>
+    </div>
+    <h1 class="main-title" onclick="toggleMenu()">News Grabber vs RSS</h1>
+    <div class='intro-block'>
+        <p class="intro-bock-p">RSS feeds fetches everything except the news full content. News grabber grabs all news and their inner page contents giving you full readable news with no suspense watsoever.</p>
+    </div>
+    <h1 class="main-title" onclick="toggleMenu()">Api Usage Rules</h1>
+    <div class='intro-block'>
+        <p class="intro-bock-p">1)You must provide a link to the souce website where the news is grabbed from. Source url will be availabe in response onbject.</p>
+        <p class="intro-bock-p">2)Do not send more than 1800 request/hour.</p>
+    </div>
+    <h1 class="main-title">Api Usage</h1>
+    <div class='intro-block' style="margin-top:20px">
+    <!--<p class="intro-bock-p">-->
+    <pre>
+    <code style="filter:drop-shadow(2px 4px 6px black);font-size:10px;">
+    //SIMPLE EXAMPLE using Jquery
+    $.get("https://stillkonfuzed.com/NewsGrabber/grabber/getNews",(allNews)=>{
+        //allNews = JSON.parse(allNews); //parse it if u get `Unexpected token` error
+        if(allNews.status === 'news_found'){ //else returns `no_news`
+            console.log(allNews); 
+            console.log(allNews.newsData); //news data
+            console.log(allNews.message); //number of news obtained.
+            allNews.newsData.forEach((news)=>{
+                $('body').append(news.news_title+"<\br>");
+                $('body').append(`<\img src='${news.news_image}' width='200px'>`);
+                $('body').append("<\br>"+news.news_content+"<\br>");
+                //remove all escape (`\`) characters from above code
+            });
+                
+        }else{
+            //handle no data | allNews.status  === 'no_news'
+            console.log(allNews.newsData); //news data will be null
+            $('body').append("<\br>"+allNews.message+"<\br>");
+        }
+    });
+    </code>
+    </pre>
+    <!--</p>-->
+    </div>
+    <div class='intro-block' style="margin-top:20px">
+    <!--<p class="intro-bock-p">-->
+    <pre>
+    <code style="filter:drop-shadow(2px 4px 6px black);font-size:10px;">
+    //News by id
+    $.get("https://stillkonfuzed.com/NewsGrabber/grabber/getNewsById",{id:'1'},(allNews)=>{
+        //allNews = JSON.parse(allNews); //parse it if u get `Unexpected token` error
+        if(allNews.status === 'news_found'){ //else returns `no_news`
+            console.log(allNews); 
+            console.log(allNews.newsData); //news data
+            console.log(allNews.message); //number of news obtained.
+            allNews.newsData.forEach((news)=>{
+                $('body').append(news.news_title+"<\br>");
+                $('body').append(`<\img src='${news.news_image}' width='200px'>`);
+                $('body').append("<\br>"+news.news_content+"<\br>");
+                //remove all escape (`\`) characters from above code
+            });
+                
+        }else{
+            //handle no data | allNews.status  === 'no_news'
+            console.log(allNews.newsData); //news data will be null
+            $('body').append("<\br>"+allNews.message+"<\br>");
+        }
+    });
+    </code>
+    </pre>
+    <!--</p>-->
+    </div>
+    <h1 class="main-title" >Cons</h1>
+    <div class='intro-block'>
+        <p class="intro-bock-p">1 out of 50 images may appear broken for some news.</p>
+        <p class="intro-bock-p">Per Hour Refresh rate.</p>
+    </div>
+</div>
+
+<style>
+    body{
+    font-family: 'Source Code Pro', monospace!important;
+    cursor:arrow!important;
+    }
+h1.main-title {
+    color: #FF5722;
+    background: #a2c3d200;
+    padding: 5px 10px 5px 40px;
+    width: fit-content;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.intro-block {
+    background: #e6e6e661;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+p.intro-bock-p {
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+b.menu-toggler {
+    font-size: 16px;
+    transform: rotate(-90deg);
+    position: absolute;
+}
+.content {
+    /*margin-top: 50px;*/
+}
+b.menu-toggler {
+    font-size: 18px;
+    transition:all 1s ease-in-out;
+    transform: rotate(-90deg);
+    position: absolute;
+    margin-top: 12px;
+    font-weight: 900;
+    color: #FF5722;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.active{
+    font-size: 28px!important;
+    transform: rotate(0deg)!important;
+    
+}
+pre {
+    margin: 0px;
+}
+</style>
+<script data-cfasync="false" src="../assets/js/jquery.min.js"></script>
+
+<script >
+    function toggleMenu(){
+        if($('.menu-toggler').hasClass('active')){
+            $('.menu-toggler').removeClass('active'); 
+            $('.menu-toggler').css('position','absolute'); 
+            $('.menu-items-container').hide(1100);
+        }else{
+            $('.menu-toggler').addClass('active'); 
+            $('.menu-items-container').show(1100);
+            setTimeout(()=>{
+                $('.active').css('position','inherit');
+            },900);
+            
+        }
+    }
+    
+    
+       
+</script>
+
+</body>
+</html>

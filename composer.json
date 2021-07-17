@@ -1,0 +1,6 @@
+{
+    "require": {
+        "slim/slim": "^3.12",
+        "spipu/html2pdf": "^5.2"
+    }
+}
