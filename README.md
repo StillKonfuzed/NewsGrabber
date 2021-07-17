@@ -62,7 +62,7 @@ POST/GET link : https://stillkonfuzed.com/NewsGrabber/grabber/gsmarenaNewsGrabbe
 ># Apps using this API
 >>KK news
 
->Setup Instruction
+>#Setup Instruction
 >>Clone the project on your xampp's "/htdoc" folder.
 >>Import the "SQL/attached-sql-file-with-some-name.sql" from your php admin.
 >>Change Database name, username and password according to your imported database in "/grabber/settings.php Line : 15,16,17"
