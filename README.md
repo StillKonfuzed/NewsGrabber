@@ -57,7 +57,7 @@ POST/GET link : https://stillkonfuzed.com/NewsGrabber/grabber/gsmarenaNewsGrabbe
 
 ># CURRENTLY SUPPORTED SITES  
 >>GSMarena.com ~ status -Production (v1)  
->>in.mashable.com ~ status -Beta (v0.6)  
+>>gadgets360.com ~ status -Beta (v0.6)  
 
 ># Apps using this API
 >>KK news
