@@ -53,7 +53,7 @@ POST/GET link : https://stillkonfuzed.com/NewsGrabber/grabber/gsmarenaNewsGrabbe
 >>Very limited sites support. (more sites support will come soon).  
 >>Some irrelevent news may appear as its a bot not AI. 
 >>No news on sundays, most sites post weekly news reviews and blogs on that day. 
->>For precise control over news, you have to contact me. 
+>>For precise control over news, you have to moddify the code yourself. 
 
 ># CURRENTLY SUPPORTED SITES  
 >>GSMarena.com ~ status -Production (v1)  
